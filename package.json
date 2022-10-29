@@ -25,7 +25,7 @@
     "main": "index.js",
     "scripts": {
         "build": "npm run bundle & npm run minify",
-        "bundle": "webpack build --mode=none --progress --entry ./index.js -o ./dist --output-filename go-fns.js --output-library-name=Random --output-library-type=umd --output-global-object=this",
+        "bundle": "webpack build --mode=none --progress --entry ./index.js -o ./dist --output-filename go-fns.js --output-library-name=Functions --output-library-type=umd --output-global-object=this",
         "minify": "uglifyjs ./dist/go-fns.js -c -m --source-map -o ./dist/go-fns.min.js",
         "test": "mocha -u tdd test/**/*.js",
         "coverage": "c8 --clean npm run test",
